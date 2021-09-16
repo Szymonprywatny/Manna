@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/styles/Navbar.scss";
 import manna_logo from "../../icons/manna_logo.svg";
-import SvgLogo from "./LogoComponent";
 
 export default class Navbar extends React.Component {
   constructor(props) {
