@@ -13,13 +13,13 @@
   //max-width: 600px;
 
 }
-@media screen and (max-width: 1079px) {
+@media screen and (min-width: 1919px) {
   .Cup-img {
     position: absolute;
     top: 62.5%;
     left: 50%;
-    width: 318px;
-    height: 318px;
+    width: 518px;
+    height: 518px;
     margin-top: -259px; /* Half the height */
     margin-left: -259px; /* Half the width */
   }

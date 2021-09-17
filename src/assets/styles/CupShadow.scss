@@ -2,22 +2,42 @@
   margin: 0;
   padding: 0;
 }
-
-.Cup-shadow{
+.Cup-shadow {
   position: absolute;
-  top: 62.5%;
-  left: 50%;
-  width: 500px;
-  height: 500px;
-  margin-top: -250px; /* Half the height */
-  margin-left: -250px; /* Half the width */
+
+  margin-top: -13vw;
+  margin-left: 36.5vw;
+  width: 26.5vw;
+  overflow: hidden;
+  height: 26.5vw;
+  //margin-top: -17.5vw; /* Half the height */
+  //margin-left: -17.5vw; /* Half the width */
   //border: solid 1px #555;
-  -webkit-box-shadow: 50px 0px 40px 0px rgba(0,0,0,0.55);
-  box-shadow: 50px 0px 40px 0px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
   //box-shadow: 10px -10px  rgba(0,0,0,0.6);
   //-moz-box-shadow: 10px -10px  rgba(0,0,0,0.6);
   //-webkit-box-shadow: 10px -10px  rgba(0,0,0,0.6);
   //-o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
-  border-radius:250px;
+  border-radius: 13.5vw;
 }
 
+@media screen and (min-width: 1919px) {
+  .Cup-shadow {
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px; /* Half the height */
+    margin-left: -250px; /* Half the width */
+    //border: solid 1px #555;
+    -webkit-box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
+    //box-shadow: 10px -10px  rgba(0,0,0,0.6);
+    //-moz-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+    //-webkit-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+    //-o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+    border-radius: 250px;
+  }
+}
