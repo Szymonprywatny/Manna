@@ -2,7 +2,10 @@ import '../assets/styles/App.css';
 import Navbar from "./layout/Navbar";
 import MainArticle from "./layout/MainArticle";
 import Cup from "./layout/Cup";
+import CupShadow from "./layout/CupShadow";
 import MainFooter from "./layout/Mainfooter";
+
+
 
 function App() {
   return (
@@ -16,8 +19,9 @@ function App() {
         <MainArticle/>
       </article>
 
-{/*      <Cup/>*/}
 
+      <Cup/>
+      <CupShadow/>
       <footer className="App-Mainfooter">
         <MainFooter/>
       </footer>

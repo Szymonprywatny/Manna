@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.Cup-img{
+  position: absolute;
+  margin-top: -13.3vw;
+  margin-left: 36.5vw;
+  width: 27vw;
+  overflow: hidden;
+  //max-width: 600px;
+
+}
+@media screen and (max-width: 1079px) {
+  .Cup-img {
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    width: 318px;
+    height: 318px;
+    margin-top: -259px; /* Half the height */
+    margin-left: -259px; /* Half the width */
+  }
+}
+
+
+

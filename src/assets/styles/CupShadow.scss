@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Cup-shadow{
+  position: absolute;
+  top: 62.5%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -250px; /* Half the width */
+  //border: solid 1px #555;
+  -webkit-box-shadow: 50px 0px 40px 0px rgba(0,0,0,0.55);
+  box-shadow: 50px 0px 40px 0px rgba(0,0,0,0.55);
+  //box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  //-moz-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  //-webkit-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  //-o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  border-radius:250px;
+}
+

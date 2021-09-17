@@ -1,5 +1,7 @@
 import React from "react";
 import "../../assets/styles/Mainfooter.scss";
+import logo_fb from "../..//icons/logo_fb.svg";
+import logo_insta from "../..//icons/logo_insta.svg";
 
 export default class MainFooter extends React.Component {
 
@@ -10,7 +12,7 @@ export default class MainFooter extends React.Component {
         <div className={"slogan"}>
             <h1>MANNA</h1>
             <h2>z nieba spadła </h2>
-            <h2>i daje kawę</h2>
+            <h2>i daje kawę.</h2>
 
         </div>
 
@@ -24,9 +26,10 @@ export default class MainFooter extends React.Component {
           <div className={"Znajdz"}>
             <h4>Znajdź nas:</h4>
             <ul>
-              <li>insta</li>
-              <li>facebook</li>
+              <li><img src={logo_insta}/></li>
+              <li><img src={logo_fb}/></li>
             </ul>
+
           </div>
         </div>
     </div>
