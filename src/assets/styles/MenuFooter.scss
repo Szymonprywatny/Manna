@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100vw;
+  height: calc(38vh - 5px);
+  background-color: #11645A;
+  & > .slogan{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    //justify-content: flex-end;
+    padding-left: 8vw;
+    padding-bottom: clamp(2rem,8vw, 3rem);
+    align-items: end;
+
+      & > h1 {
+        //width: 100px;
+        display: flex;
+        font-size: clamp(1rem, 5vw, 4.5rem);
+        font-family: mono45-headline, monospace;
+        font-weight: 500;
+        font-style: normal;
+        padding-right: 8px
+      ;
+
+      }
+      & > h2{
+        display: flex;
+        font-size: clamp(0.5rem, 3.4vw, 3rem);
+        font-family: magallanes, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        padding-bottom: 3px;
+      }
+
+
+
+  }
+  & > .kontakt {
+    padding-right: 8vw;
+    padding-bottom: clamp(1rem, 5vw, 2.5rem);
+    text-align: right;
+    & > .Adresy > h4 {
+      font-family: magallanes, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: clamp(1rem, 1.75vw, 1.5rem);
+    }
+    & > .Znajdz {
+      padding-top: clamp(1rem, 3vw, 2rem);
+      & > h4 {
+        font-family: magallanes, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1rem, 1.75vw, 1.5rem);
+      }
+      & > ul{
+        padding-top: clamp(1rem, 2vw, 1.25rem);
+        display: flex;
+        justify-content: right;
+        gap: 15px;
+        list-style: none;
+        & > li > img {
+          display: flex;
+          max-width: 25px;
+          max-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+

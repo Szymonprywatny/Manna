@@ -5,6 +5,7 @@ import Cup from "./layout/Cup";
 import CupShadow from "./layout/CupShadow";
 import MainFooter from "./layout/Mainfooter";
 import Menu from "./layout/Menu";
+import MenuFooter from "./layout/MenuFooter";
 
 
 function App() {
@@ -18,14 +19,14 @@ function App() {
       {/*<article className="App-MainArticle">*/}
       {/*  <MainArticle/>*/}
       {/*</article>*/}
-
       {/*<Cup/>*/}
       {/*<CupShadow/>*/}
-      {/*<footer className="App-Mainfooter">*/}
-      {/*  <MainFooter/>*/}
-      {/*</footer>*/}
+      {/*<MainFooter/>*/}
+
 
       <Menu></Menu>
+
+      {/*<MenuFooter/>*/}
 
     </div>
   );

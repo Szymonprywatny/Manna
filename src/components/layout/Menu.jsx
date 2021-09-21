@@ -1,5 +1,6 @@
 import React from "react";
 import "../../assets/styles/Menu.scss";
+import maszynko from "../..//icons/maszynko.jpg";
 import logo_fb from "../..//icons/logo_fb.svg";
 import logo_insta from "../..//icons/logo_insta.svg";
 
@@ -8,6 +9,11 @@ export default class Menu extends React.Component {
   render() {
 
     return <div className="Menu">
+
+      <div className={'Maszynko'}>
+        <img src={maszynko}/>
+      </div>
+
 
       <div className={'MenuWhite'}>
 
