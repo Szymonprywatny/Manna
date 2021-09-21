@@ -23,14 +23,15 @@
 .app-navbar {
     & > ul {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 8vw;
         align-items: end;
         list-style: none;
         width: 100%;
         font-family: magallanes, sans-serif;
         font-weight: 500;
         font-style: normal;
-        font-size: clamp(0.75rem, 2vw, 1.25rem);
+        font-size: clamp(0.75rem, 2vw, 1.33rem);
     }
 }
 
@@ -45,7 +46,7 @@
 .logo {
     max-width: 10vw;
     height: 18vh;
-    padding-bottom: 1vh;
+    padding-bottom: 0.7vh;
 }
 .button {
     margin-bottom: 1vh;

@@ -4,7 +4,7 @@ import MainArticle from "./layout/MainArticle";
 import Cup from "./layout/Cup";
 import CupShadow from "./layout/CupShadow";
 import MainFooter from "./layout/Mainfooter";
-
+import Menu from "./layout/Menu";
 
 
 function App() {
@@ -15,16 +15,17 @@ function App() {
         <Navbar/>
       </header>
 
-      <article className="App-MainArticle">
-        <MainArticle/>
-      </article>
+      {/*<article className="App-MainArticle">*/}
+      {/*  <MainArticle/>*/}
+      {/*</article>*/}
 
+      {/*<Cup/>*/}
+      {/*<CupShadow/>*/}
+      {/*<footer className="App-Mainfooter">*/}
+      {/*  <MainFooter/>*/}
+      {/*</footer>*/}
 
-      <Cup/>
-      <CupShadow/>
-      <footer className="App-Mainfooter">
-        <MainFooter/>
-      </footer>
+      <Menu></Menu>
 
     </div>
   );

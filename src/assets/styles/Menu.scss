@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.Menu {
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  align-items: center;
+  height: calc(79vh - 5px);
+  width: 100vw;
+
+  & > .MenuWhite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 1) 200%);
+
+    & > .WhiteHeader {
+      padding-left: 5vw;
+      padding-top: 3vh;
+      height: 100px;
+      font-family: magallanes, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      color: #484848;
+    }
+
+    & > .WhiteMenu {
+      padding-left: 8Vw;
+      font-family: magallanes, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #707070;
+      font-size: clamp(0.75rem, 1.5vw, 1rem);
+
+      & > ul {
+        list-style-type: none;
+
+        & > li {
+          & > h2 {
+            font-family: magallanes, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          }
+          & > h3 {
+            font-family: magallanes, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        }
+      }
+    }
+
+    & > .WhiteFooter {
+      height: 100px;
+    }
+  }
+
+  & > .MenuGreen {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    background-color: #11645A;
+
+
+    //justify-content: center;
+    & > .GreenHeader {
+      padding-right: 8vw;
+      padding-top: 3vh;
+      height: 100px;
+    }
+
+    & > .GreenMenu {
+      padding-right: 8vw;
+      font-family: magallanes, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      font-size: clamp(0.75rem, 1.5vw, 1rem);
+
+      & > ul {
+        list-style-type: none;
+        & > li {
+          & > h2 {
+            font-family: magallanes, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          }
+          & > h3 {
+            font-family: magallanes, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        }
+      }
+
+    }
+
+    & > .GreenFooter {
+
+      & > footer {
+        padding-right: 5vw;
+        height: 100px;
+        & > h2 {
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.2rem;
+        }
+
+        & > ul {
+          padding-top: 15px;
+          display: flex;
+          flex-direction: row-reverse;
+          list-style-type: none;
+          gap: 15px;
+
+          & > li {
+            font-family: magallanes, sans-serif;
+            & > img {
+              max-width: 25px;
+              max-height: 25px;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+
+
