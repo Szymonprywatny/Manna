@@ -5,8 +5,8 @@ import Cup from "./layout/Cup";
 import CupShadow from "./layout/CupShadow";
 import MainFooter from "./layout/Mainfooter";
 import Menu from "./layout/Menu";
-import MenuFooter from "./layout/MenuFooter";
-
+import GalleryFooter from "./layout/GalleryFooter";
+import GallerySLider from "./layout/GallerySlider";
 
 function App() {
   return (
@@ -24,9 +24,11 @@ function App() {
       {/*<MainFooter/>*/}
 
 
-      <Menu></Menu>
+      {/*<Menu></Menu>*/}
+      <GallerySLider/>
 
-      {/*<MenuFooter/>*/}
+
+      <GalleryFooter/>
 
     </div>
   );

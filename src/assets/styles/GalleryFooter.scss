@@ -8,8 +8,10 @@
   justify-content: space-between;
   align-items: end;
   width: 100vw;
-  height: calc(38vh - 5px);
-  background-color: #11645A;
+  height: 18vh;
+  background-color: white;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 100%);
+
   & > .slogan{
     display: flex;
     flex-wrap: wrap;
