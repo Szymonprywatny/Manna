@@ -1,27 +1,65 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../assets/styles/GallerSlider.scss";
-import Gallery1 from "../..//icons/gallery1.JPG";
-import Gallery2 from "../..//icons/gallery2.JPG";
-import Gallery3 from "../..//icons/gallery3.JPG";
-import Gallery4 from "../..//icons/gallery4.JPG";
-export default class GallerySlider extends React.Component {
+import Img1 from "../..//icons/gallery1.JPG";
+import Img2 from "../..//icons/gallery2.JPG";
+import Img4 from "../..//icons/gallery3.JPG";
+import Img3 from "../..//icons/gallery4.JPG";
 
-  render() {
+const Gallery = () => {
+  let data = [
+    {
+      id: 1,
+      imgSrc: Img1,
+    },
+    {
+      id: 2,
+      imgSrc: Img2,
+    },
+    {
+      id: 3,
+      imgSrc: Img3,
+    },
+    {
+      id: 4,
+      imgSrc: Img4,
+    }
+  ]
 
-    return <div className="main-article">
-      <section>
-        <div className={'Gallery'}>
+  const [model, setModel] = useState(false)
+  const [tempimgSrc, setTempImgSrc] = useState('');
 
-          <div className={'Box-picture'}><img src={Gallery1}/></div>
-          <div className={'Box-picture'}><img src={Gallery2}/></div>
-          <div className={'Box-picture'}><img src={Gallery3}/></div>
-          <div className={'Box-picture'}><img src={Gallery4}/></div>
-
-
-
-        </div>
-
-      </section>
-    </div>
+  const getImg = (imgSrc) => {
+    setTempImgSrc(imgSrc);
+    setModel(true);
   }
+
+  const closeModal = () => setModel(false)
+
+  return (
+    <>
+
+      <div className={'GalleryHeader'}>
+        <h1>GALERIA</h1>
+      </div>
+
+      <div onClick={closeModal} className={model ? "model open" : "model"}>
+        <img src={tempimgSrc}/>
+      </div>
+
+
+      <div className={'Gallery'}>
+
+        {data.map((item, index) => {
+          return (
+            <div className={'pics'} key={index} onClick={() => getImg(item.imgSrc)}>
+              <img src={item.imgSrc}/>
+              {/* Close icon */}
+            </div>
+          )
+        })}
+      </div>
+    </>
+  )
 }
+
+export default Gallery;

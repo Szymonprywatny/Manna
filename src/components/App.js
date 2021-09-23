@@ -6,7 +6,7 @@ import CupShadow from "./layout/CupShadow";
 import MainFooter from "./layout/Mainfooter";
 import Menu from "./layout/Menu";
 import GalleryFooter from "./layout/GalleryFooter";
-import GallerySLider from "./layout/GallerySlider";
+import Gallery from "./layout/GallerySlider";
 
 function App() {
   return (
@@ -16,19 +16,18 @@ function App() {
         <Navbar/>
       </header>
 
-      {/*<article className="App-MainArticle">*/}
-      {/*  <MainArticle/>*/}
-      {/*</article>*/}
-      {/*<Cup/>*/}
-      {/*<CupShadow/>*/}
-      {/*<MainFooter/>*/}
+      <article className="App-MainArticle">
+        <MainArticle/>
+      </article>
+      <Cup/>
+      <CupShadow/>
+      <MainFooter/>
 
 
       {/*<Menu></Menu>*/}
-      <GallerySLider/>
 
-
-      <GalleryFooter/>
+      {/*<Gallery/>*/}
+      {/*<GalleryFooter/>*/}
 
     </div>
   );
