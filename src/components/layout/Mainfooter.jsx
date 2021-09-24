@@ -7,7 +7,7 @@ export default class MainFooter extends React.Component {
 
   render() {
 
-    return <div className="main-footer">
+    return <div className="Article-footer">
 
         <div className={"slogan"}>
             <h1>MANNA</h1>

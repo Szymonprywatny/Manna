@@ -1,4 +1,4 @@
-import '../assets/styles/App.css';
+// import '../assets/styles/App.css';
 import Navbar from "./layout/Navbar";
 import MainArticle from "./layout/MainArticle";
 import Cup from "./layout/Cup";
@@ -7,6 +7,7 @@ import MainFooter from "./layout/Mainfooter";
 import Menu from "./layout/Menu";
 import GalleryFooter from "./layout/GalleryFooter";
 import Gallery from "./layout/GallerySlider";
+import Event from "./layout/Event";
 
 function App() {
   return (
@@ -16,18 +17,27 @@ function App() {
         <Navbar/>
       </header>
 
-      <article className="App-MainArticle">
-        <MainArticle/>
-      </article>
-      <Cup/>
-      <CupShadow/>
-      <MainFooter/>
+      {/*<div className={'Main-site'}>*/}
+      {/*  <article className="App-MainArticle">*/}
+      {/*   <MainArticle/>*/}
+      {/*   </article>*/}
+      {/*   <Cup/>*/}
+      {/*   <CupShadow/>*/}
+      {/*   <MainFooter/>*/}
+      {/*</div>*/}
 
+     <div className={'Menu-site'} >
+       {/*<Menu></Menu>*/}
+     </div>
 
-      {/*<Menu></Menu>*/}
+     <div className={'Gallery-site'}>
+       {/*<Gallery/>*/}
+       {/*<GalleryFooter/>*/}
+     </div>
 
-      {/*<Gallery/>*/}
-      {/*<GalleryFooter/>*/}
+     <div className={'Event-site'}>
+      <Event/>
+     </div>
 
     </div>
   );

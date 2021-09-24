@@ -39,7 +39,7 @@ const Gallery = () => {
     <>
 
       <div className={'GalleryHeader'}>
-        <h1>GALERIA</h1>
+        <h1>Galeria</h1>
       </div>
 
       <div onClick={closeModal} className={model ? "model open" : "model"}>
