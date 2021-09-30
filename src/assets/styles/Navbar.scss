@@ -22,6 +22,7 @@
 
 .app-navbar {
     & > ul {
+        color: #484848;
         display: flex;
         justify-content: center;
         gap: 8vw;
@@ -32,8 +33,31 @@
         font-weight: 500;
         font-style: normal;
         font-size: clamp(0.75rem, 2vw, 1.33rem);
+        & > li {
+
+            & > a:link {
+                text-decoration: none;
+                color: #484848;
+            }
+
+            & > a:visited {
+                text-decoration: none;
+                color: #484848;
+            }
+
+            & > a:hover {
+                text-decoration: none;
+                color: #484848;
+            }
+
+            & > a:active {
+                text-decoration: underline;
+                color: #484848;
+            }
+        }
+        }
     }
-}
+
 
 //@media screen and (max-width: 600px) {
 //    .app-navbar & > ul {

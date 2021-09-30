@@ -6,12 +6,13 @@
 
 .GalleryHeader {
   height: 55px;
-  padding-left: 8vw;
+  padding-left: 10vw;
   padding-top: 2vh;
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 1) 100%);
 
   & > h1 {
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    padding-top: 1.5vw;
+    font-size: clamp(1rem, 2vw, 1.75rem);
     font-family: magallanes, sans-serif;
     font-weight: 500;
     font-style: normal;

@@ -1,4 +1,4 @@
-// import '../assets/styles/App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from "./layout/Navbar";
 import MainArticle from "./layout/MainArticle";
 import Cup from "./layout/Cup";
@@ -11,35 +11,53 @@ import Event from "./layout/Event";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
 
-      <header className="App-header">
-        <Navbar/>
-      </header>
+        <header className="App-header">
+          <Navbar/>
+        </header>
 
-      {/*<div className={'Main-site'}>*/}
-      {/*  <article className="App-MainArticle">*/}
-      {/*   <MainArticle/>*/}
-      {/*   </article>*/}
-      {/*   <Cup/>*/}
-      {/*   <CupShadow/>*/}
-      {/*   <MainFooter/>*/}
-      {/*</div>*/}
+        <Switch>
+          <Route path="/Main">
+            <div className={'Main-site'}>
+              <article className="App-MainArticle">
+               <MainArticle/>
+               </article>
+               <Cup/>
+               <CupShadow/>
+               <MainFooter/>
+            </div>
+          </Route>
+        </Switch>
 
-     <div className={'Menu-site'} >
-       {/*<Menu></Menu>*/}
-     </div>
+        <Switch>
+          <Route path="/Menu">
+            <div className={'Menu-site'}>
+              <Menu></Menu>
+            </div>
+          </Route>
+        </Switch>
 
-     <div className={'Gallery-site'}>
-       {/*<Gallery/>*/}
-       {/*<GalleryFooter/>*/}
-     </div>
+        <Switch>
+          <Route path="/Gallery">
+            <div className={'Gallery-site'}>
+              <Gallery/>
+              <GalleryFooter/>
+            </div>
+          </Route>
+        </Switch>
 
-     <div className={'Event-site'}>
-      <Event/>
-     </div>
+        <Switch>
+          <Route path="/Events">
+            <div className={'Event-site'}>
+              <Event/>
+            </div>
+          </Route>
+        </Switch>
 
-    </div>
+      </div>
+    </Router>
   );
 }
 

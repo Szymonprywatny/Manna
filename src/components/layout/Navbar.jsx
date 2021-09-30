@@ -31,12 +31,12 @@ export default class Navbar extends React.Component {
 
     return <div className="app-navbar">
       <ul>
-        <li className={'button'}>Strona Główna</li>
-        <li className={'button'}>Menu</li>
+        <li className={'button'}><a href={"/Main"}> Strona Główna</a> </li>
+        <li className={'button'}><a href={"/Menu"}>Menu</a></li>
         <li><img className={'logo'} src={manna_logo}/></li>
         {/*<li><SvgLogo className={'logo'} width={166} height={166}/></li>*/}
-        <li className={'button'}>Galeria</li>
-        <li className={'button'}>Event z Manną</li>
+        <li className={'button'}><a href={"/Gallery"}>Galeria</a></li>
+        <li className={'button'}><a href={"/Events"}>Event z Manną</a></li>
         {/*<li>{dropsy}</li>*/}
         {/*<li>{this.props.mopsy}</li>*/}
         {/*<li>{napis}</li>*/}
