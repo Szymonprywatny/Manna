@@ -75,8 +75,8 @@ export default class Menu extends React.Component {
           <footer>
             <h2>Znajdź nas:</h2>
             <ul>
-              <li><img src={logo_fb}/></li>
-              <li><img src={logo_insta}/></li>
+              <li><a href={"https://www.facebook.com/MannaCoffeeSpace"}><img src={logo_fb}/></a> </li>
+              <li><a href={"https://www.instagram.com/mannacoffeespace/"}><img src={logo_insta}/></a></li>
             </ul>
           </footer>
         </div>

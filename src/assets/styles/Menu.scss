@@ -8,9 +8,9 @@
 
   & > img {
     position: absolute;
-    margin-top: -10vw;
-    margin-left: 42.5vw;
-    width: 15vw;
+    margin-top: -13.5vw;
+    margin-left: 41vw;
+    width: 18vw;
     overflow: hidden;
     -webkit-box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
     box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
@@ -56,8 +56,8 @@
 
     & > .WhiteHeader {
       padding-left: 5vw;
-      padding-top: 3vh;
-      height: 100px;
+      padding-top: 2.5vw;
+      height: 53px;
       font-family: magallanes, sans-serif;
       font-weight: 700;
       font-style: normal;
@@ -142,7 +142,6 @@
     }
 
     & > .GreenFooter {
-
       & > footer {
         padding-right: 8vw;
         height: 100px;
@@ -152,7 +151,7 @@
           font-family: magallanes, sans-serif;
           font-weight: 400;
           font-style: normal;
-          font-size: clamp(1rem, 1.75vw, 1.5rem);
+          font-size: clamp(1rem, 1.5vw, 1.3rem);
         }
 
         & > ul {
@@ -165,7 +164,7 @@
           & > li {
             font-family: magallanes, sans-serif;
 
-            & > img {
+            & > a > img {
               max-width: 25px;
               max-height: 25px;
             }

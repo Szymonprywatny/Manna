@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/styles/Navbar.scss";
 import manna_logo from "../../icons/manna_logo.svg";
-
+import {Link} from 'react-router-dom';
 export default class Navbar extends React.Component {
   constructor(props) {
     super(props)
@@ -31,12 +31,12 @@ export default class Navbar extends React.Component {
 
     return <div className="app-navbar">
       <ul>
-        <li className={'button'}><a href={"/Main"}> Strona Główna</a> </li>
-        <li className={'button'}><a href={"/Menu"}>Menu</a></li>
-        <li><img className={'logo'} src={manna_logo}/></li>
+        <li className={'button'}><Link to={"/"}>Strona Główna</Link> </li>
+        <li className={'button'}><Link to={"/Menu"}>Menu</Link></li>
+        <li><Link to={"/"}><img className={'logo'} src={manna_logo}/></Link></li>
         {/*<li><SvgLogo className={'logo'} width={166} height={166}/></li>*/}
-        <li className={'button'}><a href={"/Gallery"}>Galeria</a></li>
-        <li className={'button'}><a href={"/Events"}>Event z Manną</a></li>
+        <li className={'button'}><Link to={"/Gallery"}>Galeria</Link></li>
+        <li className={'button'}><Link to={"/Events"}>Event z Manną</Link></li>
         {/*<li>{dropsy}</li>*/}
         {/*<li>{this.props.mopsy}</li>*/}
         {/*<li>{napis}</li>*/}

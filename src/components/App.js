@@ -1,3 +1,4 @@
+import React from "react";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from "./layout/Navbar";
 import MainArticle from "./layout/MainArticle";
@@ -9,8 +10,11 @@ import GalleryFooter from "./layout/GalleryFooter";
 import Gallery from "./layout/GallerySlider";
 import Event from "./layout/Event";
 
+
 function App() {
   return (
+
+
     <Router>
       <div className="App">
 
@@ -19,43 +23,28 @@ function App() {
         </header>
 
         <Switch>
-          <Route path="/Main">
-            <div className={'Main-site'}>
-              <article className="App-MainArticle">
-               <MainArticle/>
-               </article>
-               <Cup/>
-               <CupShadow/>
-               <MainFooter/>
-            </div>
+          <Route path="/" exact>
+            <article className="App-MainArticle">
+              <MainArticle/>
+            </article>
+            <Cup/>
+            <CupShadow/>
+            <MainFooter/>
           </Route>
-        </Switch>
 
-        <Switch>
           <Route path="/Menu">
-            <div className={'Menu-site'}>
-              <Menu></Menu>
-            </div>
+            <Menu></Menu>
           </Route>
-        </Switch>
 
-        <Switch>
           <Route path="/Gallery">
-            <div className={'Gallery-site'}>
-              <Gallery/>
-              <GalleryFooter/>
-            </div>
+            <Gallery/>
+            <GalleryFooter/>
           </Route>
-        </Switch>
 
-        <Switch>
           <Route path="/Events">
-            <div className={'Event-site'}>
-              <Event/>
-            </div>
+            <Event/>
           </Route>
         </Switch>
-
       </div>
     </Router>
   );

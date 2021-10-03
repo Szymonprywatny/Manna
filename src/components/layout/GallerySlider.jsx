@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import "../../assets/styles/GallerSlider.scss";
 import Img1 from "../..//icons/gallery1.JPG";
 import Img2 from "../..//icons/gallery2.JPG";
-import Img4 from "../..//icons/gallery3.JPG";
-import Img3 from "../..//icons/gallery4.JPG";
+import Img3 from "../..//icons/gallery3.JPG";
+import Img4 from "../..//icons/gallery4.JPG";
 
 const Gallery = () => {
   let data = [

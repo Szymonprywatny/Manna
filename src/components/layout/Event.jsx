@@ -4,7 +4,9 @@ import Paper from '@material-ui/core/Paper';
 import "../../assets/styles/Event.scss";
 import logo_fb from "../..//icons/logo_fb.svg";
 import logo_insta from "../..//icons/logo_insta.svg";
+import tort1 from  "../..//icons/tort1.jpg"
 import tort2 from "../..//icons/tort2.jpeg";
+import tort3 from "../..//icons/tort3.jpg"
 
 export default class Event extends React.Component {
 
@@ -39,8 +41,8 @@ export default class Event extends React.Component {
 
         <div className={'Torty-img'}>
           <img src={tort2}/>
-          <img src={tort2}/>
-          <img className={'hide'} src={tort2}/>
+          <img src={tort1}/>
+          <img className={'hide'} src={tort3}/>
         </div>
 
 
@@ -51,8 +53,8 @@ export default class Event extends React.Component {
       <div className={'Event-footer'}>
         <h4>Znajdź nas:</h4>
         <ul>
-          <li><img src={logo_insta}/></li>
-          <li><img src={logo_fb}/></li>
+          <li><a href={"https://www.instagram.com/mannacoffeespace/"}><img src={logo_insta}/></a></li>
+          <li><a href={"https://www.facebook.com/MannaCoffeeSpace"}><img src={logo_fb}/></a> </li>
         </ul>
       </div>
 
