@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "../../assets/styles/GallerSlider.scss";
+import GalleryFooter from "./GalleryFooter";
 import Img1 from "../..//icons/gallery1.JPG";
 import Img2 from "../..//icons/gallery2.JPG";
 import Img3 from "../..//icons/gallery3.JPG";
@@ -38,26 +39,31 @@ const Gallery = () => {
   return (
     <>
 
-      <div className={'GalleryHeader'}>
-        <h1>Galeria</h1>
+      <div className={'Gallery-pager'}>
+        <div className={'GalleryHeader'}>
+          <h1>Galeria</h1>
+        </div>
+
+        <div onClick={closeModal} className={model ? "model open" : "model"}>
+          <img src={tempimgSrc}/>
+        </div>
+
+        <div className={'Gallery'}>
+
+          {data.map((item, index) => {
+            return (
+              <div className={'pics'} key={index} onClick={() => getImg(item.imgSrc)}>
+                <img src={item.imgSrc}/>
+                {/* Close icon */}
+              </div>
+            )
+          })}
+        </div>
+
+        <GalleryFooter/>
       </div>
 
-      <div onClick={closeModal} className={model ? "model open" : "model"}>
-        <img src={tempimgSrc}/>
-      </div>
 
-
-      <div className={'Gallery'}>
-
-        {data.map((item, index) => {
-          return (
-            <div className={'pics'} key={index} onClick={() => getImg(item.imgSrc)}>
-              <img src={item.imgSrc}/>
-              {/* Close icon */}
-            </div>
-          )
-        })}
-      </div>
     </>
   )
 }

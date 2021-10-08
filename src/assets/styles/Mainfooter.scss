@@ -24,7 +24,7 @@
       & > h1 {
         //width: 100px;
         display: flex;
-        font-size: clamp(1rem, 5vw, 4.5rem);
+        font-size: clamp(1rem, 5vw, 4.1rem);
         font-family: mono45-headline, monospace;
         font-weight: 500;
         font-style: normal;
@@ -33,7 +33,7 @@
       }
       & > h2{
         display: flex;
-        font-size: clamp(0.5rem, 3.4vw, 3rem);
+        font-size: clamp(0.5rem, 3.3vw, 2.55rem);
         font-family: magallanes, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -45,16 +45,18 @@
   }
   & > .kontakt {
     padding-right: 8vw;
-    padding-bottom: 34px;
+    padding-bottom: 29px;
     text-align: right;
     & > .Adresy > h4 {
       font-family: magallanes, sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: clamp(1rem, 1.75vw, 1.5rem);
+      //font-size: clamp(1rem, 1.75vw, 1.5rem);
+      font-size: clamp(1rem, 1.5vw, 1.3rem);
+
     }
     & > .Znajdz {
-      padding-top: 15px;
+      padding-top: 6px;
       & > h4 {
         font-family: magallanes, sans-serif;
         font-weight: 400;
@@ -62,15 +64,15 @@
         font-size: clamp(1rem, 1.5vw, 1.3rem);
       }
       & > ul{
-        padding-top: 15px;
+        padding-top: 6px;
         display: flex;
         justify-content: right;
-        gap: 15px;
+        gap: 13px;
         list-style: none;
         & > li > a > img {
           display: flex;
-          max-width: 25px;
-          max-height: 25px;
+          max-width: 24px;
+          max-height: 24px;
         }
       }
     }

@@ -27,13 +27,6 @@ export default class Event extends React.Component {
         </h4>
       </div>
 
-
-
-
-
-
-
-
         <div className={'Torty-txt'}>
           <h3>Torty i ciasta na zamówienie</h3>
           <h4>Torty to nasza specjalność</h4>
@@ -44,11 +37,6 @@ export default class Event extends React.Component {
           <img src={tort1}/>
           <img className={'hide'} src={tort3}/>
         </div>
-
-
-
-
-
 
       <div className={'Event-footer'}>
         <h4>Znajdź nas:</h4>
