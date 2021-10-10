@@ -5,7 +5,7 @@ import Img1 from "../..//icons/gallery1.JPG";
 import Img2 from "../..//icons/gallery2.JPG";
 import Img3 from "../..//icons/gallery3.JPG";
 import Img4 from "../..//icons/gallery4.JPG";
-
+import {useTransition, animated} from "react-spring";
 const Gallery = () => {
   let data = [
     {
@@ -34,10 +34,17 @@ const Gallery = () => {
     setModel(true);
   }
 
+  const [isVisible, setIsVisible] = useState(false);
+  const transition = useTransition(isVisible, {
+    from: { x: -3333, y: 0, opacity: 0},
+    enter: { x: 0, y: 0, opacity: 1},
+    leave: { x:3333, y: 0, opacity: 0}
+  })
+
   const closeModal = () => setModel(false)
 
-  return (
-    <>
+  return <>{transition((style, item) => {
+    return <animated.div style={style}>
 
       <div className={'Gallery-pager'}>
         <div className={'GalleryHeader'}>
@@ -64,8 +71,9 @@ const Gallery = () => {
       </div>
 
 
-    </>
-  )
+    </animated.div>
+  })}</>
+
 }
 
 export default Gallery;

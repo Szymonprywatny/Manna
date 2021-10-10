@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import "../../assets/styles/Event.scss";
@@ -7,12 +7,21 @@ import logo_insta from "../..//icons/logo_insta.svg";
 import tort1 from  "../..//icons/tort1.jpg"
 import tort2 from "../..//icons/tort2.jpeg";
 import tort3 from "../..//icons/tort3.jpg"
+import {useTransition, animated} from "react-spring";
 
-export default class Event extends React.Component {
+const Event = () => {
 
-  render() {
+  const [isVisible, setIsVisible] = useState(false);
+  const transition = useTransition(isVisible, {
+    from: { x: -3333, y: 0, opacity: 0},
+    enter: { x: 0, y: 0, opacity: 1},
+    leave: { x:3333, y: 0, opacity: 0}
+  })
 
-    return <div className="main-event">
+  return <>{transition((style, item) => {
+    return <animated.div style={style}>
+
+  <div className="main-event">
 
       <div className={"Event-header"}>
         <h1>Event z Manną</h1>
@@ -48,5 +57,8 @@ export default class Event extends React.Component {
 
 
     </div>
+    </animated.div>
+  })}</>
   }
-}
+
+export  default Event;

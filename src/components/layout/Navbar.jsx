@@ -6,7 +6,7 @@ import {useTransition, animated} from "react-spring";
 import MainArticle from "./MainArticle";
 
 
-const Navbar = () => {
+const Navbar = (props) => {
   // constructor(props) {
   //   super(props)
   //   this.state = {
@@ -25,14 +25,6 @@ const Navbar = () => {
   // componentDidUpdate() {
   //
   // }
-  const [isVisible, setIsVisible] = useState(false);
-  const transition = useTransition(isVisible, {
-    from: { x: 0, y: -800, opacity: 1},
-    enter: { x: 0, y: 0, opacity: 1},
-    leave: { x: 0, y: -800, opacity: 0}
-  })
-
-
 
     // const {dropsy} = this.props;
     // const {napis} = this.state
@@ -41,16 +33,41 @@ const Navbar = () => {
 
       <div className={"navbar"}>
         <ul>
-          <NavLink exact to={""} className={"nav-item"} activeClassName={"nav-item-active"}
-                   onClick={() => {
-                   setIsVisible(v => !v);
-                    }}
-          >Strona Główna</NavLink>
-          <NavLink to={"/Menu"} className={"nav-item"} activeClassName={"nav-item-active"}>Menu</NavLink>
+          <NavLink
+            exact to={""}
+            className={"nav-item"}
+            activeClassName={"nav-item-active"}
+            onClick={() => props.onEvent("MAIN_ARTICLE")}
+            // onClick={() => setIsVisible(v => !v)}
+          >
+            Strona Główna
+          </NavLink>
+          <NavLink
+            to={"/Menu"}
+            className={"nav-item"}
+            activeClassName={"nav-item-active"}
+            onClick={() => props.onEvent("MENU")}
+          >
+            Menu
+          </NavLink>
           <Link to={"/"}><img className={'logo'} src={manna_logo}/></Link>
           {/*<li><SvgLogo className={'logo'} width={166} height={166}/></li>*/}
-          <NavLink to={"/Gallery"} className={"nav-item"} activeClassName={"nav-item-active"}>Galeria</NavLink>
-          <NavLink to={"/Events"} className={"nav-item"} activeClassName={"nav-item-active"}>Event z Manną</NavLink>
+          <NavLink
+            to={"/Gallery"}
+            className={"nav-item"}
+            activeClassName={"nav-item-active"}
+            onClick={() => props.onEvent("GALLERY")}
+          >
+            Galeria
+          </NavLink>
+          <NavLink
+            to={"/Events"}
+            className={"nav-item"}
+            activeClassName={"nav-item-active"}
+            onClick={() => props.onEvent("EVENTS")}
+          >
+            Event z Manną
+          </NavLink>
           {/*<li>{dropsy}</li>*/}
           {/*<li>{this.props.mopsy}</li>*/}
           {/*<li>{napis}</li>*/}

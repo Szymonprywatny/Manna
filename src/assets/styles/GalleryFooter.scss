@@ -9,9 +9,8 @@
   align-items: end;
   width: 100vw;
   height: 18vh;
-  background-color: white;
-  background-image: linear-gradient(to right, #ffffff, #f4f4f4, #e9e9e9, #dedede, #d3d3d3);
-
+  background: rgb(246,246,246);
+  background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(243,243,243,1) 100%);
   & > .slogan{
     display: flex;
     flex-wrap: wrap;
