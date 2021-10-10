@@ -18,18 +18,18 @@
   }
 }
 
-@media screen and (min-width: 1919px) {
-  .Maszynko {
-    & > img {
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      width: 300px;
-      margin-top: -150px; /* Half the height */
-      margin-left: -150px; /* Half the width */
-    }
-  }
-}
+//@media screen and (min-width: 1919px) {
+//  .Maszynko {
+//    & > img {
+//      position: absolute;
+//      top: 55%;
+//      left: 50%;
+//      width: 300px;
+//      margin-top: -150px; /* Half the height */
+//      margin-left: -150px; /* Half the width */
+//    }
+//  }
+//}
 @media screen and (max-width: 767px) {
   .Maszynko {
     & > img {

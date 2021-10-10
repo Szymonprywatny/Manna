@@ -20,10 +20,10 @@ const Gallery = () => {
       id: 3,
       imgSrc: Img3,
     },
-    {
-      id: 4,
-      imgSrc: Img4,
-    }
+    // {
+    //   id: 4,
+    //   imgSrc: Img4,
+    // }
   ]
 
   const [model, setModel] = useState(false)
@@ -36,7 +36,7 @@ const Gallery = () => {
 
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: { x: -4321, y: 0, opacity: 1},
+    from: { x: -1666, y: 0, opacity: 0},
     enter: { x: 0, y: 0, opacity: 1},
     leave: { x:4321, y: 0, opacity: 0}
   })

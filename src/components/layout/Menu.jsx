@@ -8,7 +8,7 @@ const Menu = () => {
 
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: { x: -4321, y: 0, opacity: 1},
+    from: { x: -1666, y: 0, opacity: 0},
     enter: { x: 0, y: 0, opacity: 1},
     leave: { x:4321, y: 0, opacity: 0}
   })

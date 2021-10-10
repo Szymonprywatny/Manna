@@ -8,9 +8,9 @@ import {useTransition, animated} from "react-spring";
 const MainArticle = () =>  {
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: { x: 0, y: -4321, opacity: 1},
+    from: { x: 0, y: -666, opacity: 1},
     enter: { x: 0, y: 0, opacity: 1},
-    leave: { x: 0, y: -4321, opacity: 0}
+    leave: { x: 0, y: -821, opacity: 0}
   })
 
   // useEffect(() => {
