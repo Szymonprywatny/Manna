@@ -36,9 +36,9 @@ const Gallery = () => {
 
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: { x: -3333, y: 0, opacity: 0},
+    from: { x: -4321, y: 0, opacity: 1},
     enter: { x: 0, y: 0, opacity: 1},
-    leave: { x:3333, y: 0, opacity: 0}
+    leave: { x:4321, y: 0, opacity: 0}
   })
 
   const closeModal = () => setModel(false)
