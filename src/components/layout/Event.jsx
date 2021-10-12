@@ -5,7 +5,7 @@ import "../../assets/styles/Event.scss";
 import logo_fb from "../..//icons/logo_fb.svg";
 import logo_insta from "../..//icons/logo_insta.svg";
 import tort1 from  "../..//icons/tort1.jpg"
-import tort2 from "../..//icons/tort2.jpeg";
+import tort2 from "../..//icons/tort2.jpg";
 import tort3 from "../..//icons/tort3.jpg"
 import {useTransition, animated} from "react-spring";
 

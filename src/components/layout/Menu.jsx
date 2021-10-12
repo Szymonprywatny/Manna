@@ -32,20 +32,20 @@ const Menu = () => {
           <div className={'WhiteMenu'}>
             <ul>
               <li><h2>Na ciepło:</h2></li>
-              <li><h3>Espresso 6,50</h3></li>
-              <li><h3>Dopplo Espresso 8,50</h3></li>
-              <li><h3>Americano 9,50</h3></li>
-              <li><h3>Cappucino 10,50</h3></li>
-              <li><h3>Caffe Latte 10.50</h3></li>
-              <li><h3>Flat White 10,50</h3></li>
-              <li><h3>Gorąca Czekolada 7,50</h3></li>
-              <li><h3>Herbata Czarna, Zielona, Owocowa 8,00</h3></li>
+              <li><h3>Espresso</h3></li>
+              <li><h3>Dopplo Espresso</h3></li>
+              <li><h3>Americano</h3></li>
+              <li><h3>Cappucino</h3></li>
+              <li><h3>Caffe Latte</h3></li>
+              <li><h3>Flat White</h3></li>
+              <li><h3>Gorąca Czekolada</h3></li>
+              <li><h3>Herbata Czarna, Zielona, Owocowa</h3></li>
               <br/>
               <li><h2>Na zimno:</h2></li>
-              <li><h3>Kawa mrożona blindowana 12,50</h3></li>
-              <li><h3>Espresso Tonic/Pomarańcza 12,50</h3></li>
-              <li><h3>Domowa Lemoniada 12,00</h3></li>
-              <li><h3>Sok wyciskany 10,00</h3></li>
+              <li><h3>Kawa mrożona blindowana</h3></li>
+              <li><h3>Espresso Tonic/Pomarańcza</h3></li>
+              <li><h3>Domowa Lemoniada</h3></li>
+              <li><h3>Sok wyciskany</h3></li>
             </ul>
           </div>
 
@@ -62,20 +62,20 @@ const Menu = () => {
             <ul>
               <li><h2>Na słono:</h2></li>
               <li><h3>Bagietka z kurczakiem/</h3></li>
-              <li><h3>tuńczykiem/humusem 8,50</h3></li>
-              <li><h3>Sałatja z buraka/humusem/grecka 10,50</h3></li>
-              <li><h3>Tarta Warzywna 35,00</h3></li>
-              <li><h3>Pasztecik ze szpinakiem 6,00</h3></li>
-              <li><h3>Zupa dnia 8,00</h3></li>
-              <li><h3>Tost neapolitański 12,00</h3></li>
+              <li><h3>tuńczykiem/humusem</h3></li>
+              <li><h3>Sałatka z buraka/humusem/grecka</h3></li>
+              <li><h3>Tarta Warzywna</h3></li>
+              <li><h3>Pasztecik ze szpinakiem</h3></li>
+              <li><h3>Zupa dnia</h3></li>
+              <li><h3>Tost neapolitański</h3></li>
               <br/>
               <li><h2>Na słodko:</h2></li>
-              <li><h3>Ciasteczko manna 6,50</h3></li>
-              <li><h3>Chleb bananowy 2 szt 5,00</h3></li>
-              <li><h3>CIasto dnia 8,90</h3></li>
-              <li><h3>Tort dnia 8,90</h3></li>
-              <li><h3>Jogurt dnia 8,90</h3></li>
-              <li><h3>Kruche ciastka 3,50</h3></li>
+              <li><h3>Ciasteczko manna</h3></li>
+              <li><h3>Chleb bananowy 2 szt</h3></li>
+              <li><h3>CIasto dnia</h3></li>
+              <li><h3>Tort dnia</h3></li>
+              <li><h3>Jogurt dnia</h3></li>
+              <li><h3>Kruche ciastka</h3></li>
             </ul>
           </div>
 
