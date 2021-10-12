@@ -13,9 +13,10 @@ const Event = () => {
 
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: { x: -1666, y: 0, opacity: 0},
-    enter: { x: 0, y: 0, opacity: 1},
-    leave: { x: 4321, y: 0, opacity: 0}
+    from: {opacity: 0, transform: "translate(0%, 100%)"},
+    enter: {opacity: 1,transform: "translate(0%, 0)"},
+    leave: {transform: "translate(0%, -50%)"},
+    delay: 100
   })
 
   return <>{transition((style, item) => {
@@ -42,9 +43,9 @@ const Event = () => {
         </div>
 
         <div className={'Torty-img'}>
+          <img src={tort3}/>
           <img src={tort2}/>
-          <img src={tort1}/>
-          <img className={'hide'} src={tort3}/>
+          <img className={'hide'} src={tort1}/>
         </div>
 
       <div className={'Event-footer'}>

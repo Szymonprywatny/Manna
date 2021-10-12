@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
 
-}
 
 .Maszynko {
 
@@ -14,7 +10,7 @@
     overflow: hidden;
     -webkit-box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
     box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
-    border-radius: 0.5vw;
+    border-radius: 0.3vw;
   }
 }
 
@@ -160,11 +156,11 @@
         }
 
         & > ul {
-          padding-top: 6px;
+          padding-top: 8px;
           display: flex;
           flex-direction: row-reverse;
           list-style-type: none;
-          gap: 13px;
+          gap: 10px;
 
           & > li {
             font-family: magallanes, sans-serif;

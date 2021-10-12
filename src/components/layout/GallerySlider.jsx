@@ -1,11 +1,12 @@
 import React, {useState} from "react";
 import "../../assets/styles/GallerSlider.scss";
 import GalleryFooter from "./GalleryFooter";
-import Img1 from "../..//icons/gallery1.JPG";
-import Img2 from "../..//icons/gallery2.JPG";
+import Img1 from "../..//icons/gallery2.JPG";
+import Img2 from "../..//icons/gallery1.JPG";
 import Img3 from "../..//icons/gallery3.JPG";
 import Img4 from "../..//icons/gallery4.JPG";
 import {useTransition, animated} from "react-spring";
+
 const Gallery = () => {
   let data = [
     {
@@ -36,9 +37,10 @@ const Gallery = () => {
 
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: { x: -1666, y: 0, opacity: 0},
-    enter: { x: 0, y: 0, opacity: 1},
-    leave: { x:4321, y: 0, opacity: 0}
+    from: {opacity: 0,transform: "translate(100%, 0)"},
+    enter: {opacity: 1,transform: "translate(0%, 0)"},
+    leave: {transform: "translate(0%, -50%)"},
+    delay: 100
   })
 
   const closeModal = () => setModel(false)

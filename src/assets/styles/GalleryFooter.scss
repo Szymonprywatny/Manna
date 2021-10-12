@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 .gallery-footer {
   display: flex;
@@ -62,10 +59,10 @@
         font-size: clamp(1rem, 1.5vw, 1.3rem);
       }
       & > ul{
-        padding-top: 6px;
+        padding-top: 8px;
         display: flex;
         justify-content: right;
-        gap: 13px;
+        gap: 10px;
         list-style: none;
         & > li > a > img {
           display: flex;

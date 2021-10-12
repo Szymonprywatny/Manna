@@ -1,9 +1,6 @@
 @import url('https://use.typekit.net/cco8pen.css');
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 .Article-footer {
   display: flex;
@@ -37,7 +34,6 @@
         font-family: magallanes, sans-serif;
         font-weight: 500;
         font-style: normal;
-        padding-bottom: 3px;
       }
 
 
@@ -56,7 +52,7 @@
 
     }
     & > .Znajdz {
-      padding-top: 6px;
+      padding-top: 13px;
       & > h4 {
         font-family: magallanes, sans-serif;
         font-weight: 400;
@@ -64,10 +60,10 @@
         font-size: clamp(1rem, 1.5vw, 1.3rem);
       }
       & > ul{
-        padding-top: 6px;
+        padding-top: 8px;
         display: flex;
         justify-content: right;
-        gap: 13px;
+        gap: 10px;
         list-style: none;
         & > li > a > img {
           display: flex;
