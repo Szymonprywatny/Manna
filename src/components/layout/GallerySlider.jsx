@@ -21,10 +21,10 @@ const Gallery = () => {
       id: 3,
       imgSrc: Img3,
     },
-    // {
-    //   id: 4,
-    //   imgSrc: Img4,
-    // }
+    {
+      id: 4,
+      imgSrc: Img4,
+    }
   ]
 
   const [model, setModel] = useState(false)

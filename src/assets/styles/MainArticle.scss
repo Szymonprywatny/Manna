@@ -19,26 +19,34 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-right: 8vw;
+      padding-right: 10vw;
       align-items: center;
+        &  > h2 {
+          width: 550px;
+          font-family: magallanes, sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: clamp(2rem, 3vw, 2.618rem);
+          padding-bottom: 10px;
+        }
+        & > h3 {
+          width: 550px;
+          font-family: magallanes, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: clamp(1rem, 1.3vw, 1.618rem);
+        }
     }
-    & > section > h2 {
-    width: 550px;
-    font-family: magallanes, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: clamp(1rem, 5vw, 2.7rem);
 
-
-  }
-    & > section > h3 {
-      width: 550px;
-      font-family: magallanes, sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: clamp(1rem, 2vw, 2rem);
-    }
 }
 
+//---SAFARI ONLY------
+@supports (-webkit-hyphens:none) {
+  .main-article > section > h2{
+    //font-size: clamp(2rem, 3px, 2.618rem);
+    font-size: min(max(1rem, 2.618rem), 2.618rem);
+    //  font-size: max(4px, min(1vw, 10px));
 
+  }
+}
 

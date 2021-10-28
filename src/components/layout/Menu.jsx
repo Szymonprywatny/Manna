@@ -4,16 +4,16 @@ import maszynko from "../..//icons/maszynko.jpg";
 import logo_fb from "../..//icons/logo_fb.svg";
 import logo_insta from "../..//icons/logo_insta.svg";
 import {useTransition, animated} from "react-spring";
-const Menu = () => {
 
+const Menu = () => {
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
     from: {opacity: 0, transform: "translate(-100%, 0)"},
     enter: {opacity: 1, transform: "translate(0%, 0)"},
     leave: {transform: "translate(0%, -50%)"},
     delay: 100
-
   })
+
   return <>{transition((style, item) => {
     return <animated.div style={style}>
       <div className="Menu">
@@ -21,7 +21,6 @@ const Menu = () => {
         <div className={'Maszynko'}>
           <img src={maszynko}/>
         </div>
-
 
         <div className={'MenuWhite'}>
 
