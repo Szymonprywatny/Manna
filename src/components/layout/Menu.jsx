@@ -8,10 +8,9 @@ import {useTransition, animated} from "react-spring";
 const Menu = () => {
     const [isVisible, setIsVisible] = useState(false);
     const transition = useTransition(isVisible, {
-        from: {opacity: 0, transform: "translate(-100%, 0)"},
+        from: {opacity: 1, transform: "translate(-200%, 0)"},
         enter: {opacity: 1, transform: "translate(0%, 0)"},
-        leave: {transform: "translate(0%, -50%)"},
-        delay: 100
+        leave: {transform: "translate(0%, -50%)"}
     })
 
     return <>{transition((style, item) => {

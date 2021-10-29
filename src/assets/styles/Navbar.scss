@@ -1,6 +1,6 @@
 
 .navbar {
-  display: fixed;
+  display: flex;
   z-index: 998;
   height: 21vh;
   width: 100vw;
@@ -26,12 +26,15 @@
     }
   }
 }
-
+.menu-bar{
+  display: none;
+}
 .logo {
-  padding-top: 10%;
-  max-width: 8vw;
   height: 19vh;
-  //padding-bottom: vh;
+  //width: auto;
+  //max-width: 8vw;
+  //height: 19vh;
+  //padding-botstsom: vh;
 }
 
 .nav-item {
@@ -58,6 +61,50 @@
 
 }
 
+@media screen and (max-width: 768px) {
+  .text-menu{
+    display: none;
+  }
+  .mobile-menu{
+    position: absolute;
+    top: 21vh;
+    width: 100vw;
+    height: 35vh;
+    background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(243,243,243,1) 100%);
+    //border-bottom: 2px solid
+    & > ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: stretch;
+    & > li {
+      height: 100%;
+      //padding-top: 10px;
+      align-items: center;
+      padding-top: 8%;
+      //height: 8vh;
+    }
+    }
+  }
+  .navbar {
+    border: none;
+  }
+  .logo {
+    //padding-top: 20px;
+    height: 124px;
+    //margin-top: 2vh;
+    //padding-bottom: ;
+  }
+  .menu-bar{
+    display: block;
+    position: absolute;
+    left: 8vw;
+    top: 5vh;
+    height: 18px;
+    width: auto;
+  }
+}
 //---SAFARI ONLY------
 @supports (-webkit-hyphens:none) {
   .navbar {
