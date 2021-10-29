@@ -44,8 +44,8 @@ const Event = () => {
 
         <div className={'Torty-img'}>
           <img src={tort3}/>
-          <img src={tort2}/>
-          <img className={'hide'} src={tort1}/>
+          <img className={'not-first-img'} src={tort2}/>
+          <img className={'not-first-img'} src={tort1}/>
         </div>
 
       <div className={'Event-footer'}>

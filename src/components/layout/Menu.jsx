@@ -80,7 +80,7 @@ const Menu = () => {
 
           <div className={'GreenFooter'}>
             <footer>
-              <h2>Znajdź nas:</h2>
+              <h4>Znajdź nas:</h4>
               <ul>
                 <li><a href={"https://www.facebook.com/MannaCoffeeSpace"}><img src={logo_fb}/></a></li>
                 <li><a href={"https://www.instagram.com/mannacoffeespace/"}><img src={logo_insta}/></a></li>

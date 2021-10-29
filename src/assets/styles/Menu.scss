@@ -1,12 +1,11 @@
 
-
 .Maszynko {
 
   & > img {
     position: absolute;
-    margin-top: -13.5vw;
-    margin-left: 41vw;
-    width: 18vw;
+    margin-top: -11vw;
+    margin-left: 42.5vw;
+    width: 15vw;
     overflow: hidden;
     -webkit-box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
     box-shadow: 50px 0px 40px 0px rgba(0, 0, 0, 0.55);
@@ -48,26 +47,30 @@
     justify-content: space-between;
     width: 50%;
     height: 100%;
-    background: rgb(246,246,246);
-    background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(243,243,243,1) 100%);& > .WhiteHeader {
-      padding-left: 5vw;
-      padding-top: 2.5vw;
+    background: rgb(246, 246, 246);
+    background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 100%);
+
+    & > .WhiteHeader {
+      padding-left: 8vw;
+      padding-top: 2.5rem;
       height: 53px;
       font-size: clamp(0.75rem, 1vw, 1rem);
       font-family: magallanes, sans-serif;
       font-weight: 700;
       font-style: normal;
       color: #484848;
+
     }
 
     & > .WhiteMenu {
-      padding-left: 8Vw;
+      //padding-top: -50px;
+      padding-left: 10Vw;
       font-family: magallanes, sans-serif;
       font-weight: 400;
       font-style: normal;
       color: #707070;
-      font-size: clamp(0.75rem, 1vw, 1.33rem);
-
+      font-size: clamp(0.75rem, 1vw, 1.618rem);
+      padding-bottom: 60px;
 
       & > ul {
         list-style-type: none;
@@ -77,6 +80,7 @@
             font-family: magallanes, sans-serif;
             font-weight: 500;
             font-style: normal;
+            padding-bottom: 4px;
           }
 
           & > h3 {
@@ -111,12 +115,13 @@
     }
 
     & > .GreenMenu {
-      padding-right: 8vw;
+      padding-right: 10vw;
       font-family: magallanes, sans-serif;
       font-weight: 400;
       font-style: normal;
       color: white;
-      font-size: clamp(0.75rem, 1vw, 1.33rem);
+      font-size: clamp(0.75rem, 1vw, 1.618rem);
+
       & > ul {
         list-style-type: none;
 
@@ -126,6 +131,7 @@
             font-family: magallanes, sans-serif;
             font-weight: 500;
             font-style: normal;
+            padding-bottom: 4px;
           }
 
           & > h3 {
@@ -143,16 +149,16 @@
     & > .GreenFooter {
       & > footer {
         padding-right: 8vw;
-        height: 85px;
-        padding-top: 50px;
-        padding-bottom: 0px;
+        //height: 85px;
+        //padding-top: 80px;
 
-        & > h2 {
-
+        & > h4 {
           font-family: magallanes, sans-serif;
           font-weight: 400;
           font-style: normal;
-          font-size: clamp(1rem, 1.5vw, 1.3rem);
+          font-size: clamp(1rem, 1vw, 1.618rem);
+          margin-bottom: 2px;
+
         }
 
         & > ul {
@@ -161,9 +167,12 @@
           flex-direction: row-reverse;
           list-style-type: none;
           gap: 10px;
+          padding-right: 4px;
 
           & > li {
+            margin-top: -4px;
             font-family: magallanes, sans-serif;
+            padding-bottom: 16px;
 
             & > a > img {
               max-width: 24px;

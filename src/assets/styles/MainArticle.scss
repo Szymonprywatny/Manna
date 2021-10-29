@@ -43,9 +43,11 @@
 //---SAFARI ONLY------
 @supports (-webkit-hyphens:none) {
   .main-article > section > h2{
-    //font-size: clamp(2rem, 3px, 2.618rem);
-    font-size: min(max(1rem, 2.618rem), 2.618rem);
-    //  font-size: max(4px, min(1vw, 10px));
+    //font-size: min(max(1.75rem, 3vw), 2.1rem);
+    //font-size: min(max(1rem, 1.618rem), 2.618rem);
+    //min-height: 100px;
+    //font-size: max(16px, min(26px, 48px));
+    //font-size: clamp(22px, 2.6vw, 80px);
 
   }
 }

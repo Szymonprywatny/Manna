@@ -21,9 +21,9 @@ export default class MainFooter extends React.Component {
 
             <div className={"kontakt"}>
                 <div className={"Adresy"}>
-                    <h4>ul. Gdańska 95</h4>
+                    <h4>Ul. Gdańska 95</h4>
                     <h4>tel: 515 029 337</h4>
-                    <h4>E-mail: manna.gdanska@gmail.com</h4>
+                    <h4>manna.gdanska@gmail.com</h4>
                 </div>
                 <div className={"Znajdz"}>
                     <h4>Znajdź nas:</h4>

@@ -63,7 +63,7 @@
   & > .kontakt {
     padding-right: 10vw;
     text-align: right;
-    padding-bottom: 5vh;
+    //padding-bottom: 1.6vh;
 
     & > .Adresy > h4 {
       font-family: magallanes, sans-serif;
@@ -75,23 +75,25 @@
     }
 
     & > .Znajdz {
-      padding-top: 10px;
-      padding-bottom: 10px;
+
+      padding-top: 6px;
+      //padding-bottom: 10px;
 
       & > h4 {
         font-family: magallanes, sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: clamp(1rem, 2vw, 1rem);
+        padding-bottom: 6px;
       }
 
       & > ul {
         display: flex;
         justify-content: flex-end;
-        grid-gap: 12px;
+        grid-gap: 8px;
         list-style: none;
         padding-right: 2px;
-        padding-top: 6px;
+        padding-bottom: 6px;
 
         & > li > a > img {
           display: flex;
@@ -128,7 +130,7 @@
       & > .Znajdz {
         & > ul {
           & > .insta {
-            margin-right: 12px;
+            margin-right: 8px;
           }
         }
       }
