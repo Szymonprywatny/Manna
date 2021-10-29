@@ -3,7 +3,7 @@
 .gallery-footer {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   width: 100vw;
   height: 18vh;
   background: rgb(246,246,246);
@@ -63,6 +63,7 @@
         padding-top: 8px;
         display: flex;
         justify-content: right;
+        flex-direction: row-reverse;
         gap: 10px;
         list-style: none;
         padding-right: 2px;
@@ -76,4 +77,8 @@
   }
 }
 
+//---SAFARI ONLY------
+@supports (-webkit-hyphens:none) {
+
+}
 

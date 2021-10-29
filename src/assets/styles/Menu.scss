@@ -93,7 +93,7 @@
     }
 
     & > .WhiteFooter {
-      height: 100px;
+      height: 70px;
     }
   }
 
@@ -148,7 +148,7 @@
 
     & > .GreenFooter {
       & > footer {
-        padding-top: 32px;
+        padding-top: 2px;
         padding-right: 8vw;
         //height: 85px;
         //padding-top: 80px;
@@ -188,5 +188,44 @@
   }
 }
 
+//---SAFARI ONLY------
+@supports (-webkit-hyphens:none) {
+  .insta {
+    margin-right: 8px;
+  }
+  @media (min-width: 1918px) {
+    .Menu > .MenuWhite > .WhiteMenu > ul > li > h2 {
+      font-size: 2.2rem;
+    }
+    .Menu > .MenuWhite > .WhiteMenu > ul > li > h3 {
+      font-size: 1.5rem;
+    }
+    .Menu > .MenuGreen > .GreenMenu > ul > li > h2 {
+      font-size: 2.2rem;
+    }
+    .Menu > .MenuGreen > .GreenMenu > ul > li > h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1360px) and (max-width: 1917px) {
+  }
+
+  @media (min-width: 790px) and (max-width: 1350px) {
+    .Menu > .MenuWhite > .WhiteMenu > ul > li > h2 {
+      font-size: 1.1rem;
+    }
+    .Menu > .MenuWhite > .WhiteMenu > ul > li > h3 {
+      font-size: 0.8rem;
+    }
+    .Menu > .MenuGreen > .GreenMenu > ul > li > h2 {
+      font-size: 1.1rem;
+    }
+    .Menu > .MenuGreen > .GreenMenu > ul > li > h3 {
+      font-size: 0.8rem;
+    }
+  }
+
+}
 
 

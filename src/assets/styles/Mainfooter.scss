@@ -8,7 +8,6 @@
   height: calc(38vh - 5px);
   background-color: #11645A;
 
-
   & > .slogan {
     display: flex;
     //flex-wrap: wrap;
@@ -22,26 +21,22 @@
       display: flex;
       align-items: end;
 
-
       & > h1 {
         font-size: 4.236rem;
         font-family: mono45-headline, monospace;
         font-weight: 500;
         font-style: normal;
         padding-right: 14px;
-
       }
 
       & > h2 {
         padding-top: 0;
         justify-items: end;
-        font-size: clamp(1rem, 2.4vw, 2.618rem);
+        font-size: clamp(1rem, 2vw, 2.618rem);
         font-family: magallanes, sans-serif;
         font-weight: 500;
         font-style: normal;
         padding-bottom: 6px;
-
-
       }
     }
 
@@ -50,14 +45,12 @@
       align-items: end;
 
       & > h2 {
-        font-size: clamp(1rem, 2.4vw, 2.618rem);
+        font-size: clamp(1rem, 2vw, 2.618rem);
         font-family: magallanes, sans-serif;
         font-weight: 500;
         font-style: normal;
       }
     }
-
-
   }
 
   & > .kontakt {
@@ -71,11 +64,9 @@
       font-style: normal;
       //font-size: clamp(1rem, 1.75vw, 1.5rem);
       font-size: clamp(1rem, 2vw, 1rem);
-
     }
 
     & > .Znajdz {
-
       padding-top: 6px;
       //padding-bottom: 10px;
 
@@ -127,6 +118,7 @@
         }
       }
     }
+
     & > .kontakt {
       & > .Znajdz {
         & > ul {
@@ -135,6 +127,61 @@
           }
         }
       }
+    }
+  }
+  @media (min-width: 1918px) {
+    .article-footer > .slogan > .first-row > h1 {
+      font-size: 5rem;
+    }
+    .article-footer > .slogan > .first-row > h2 {
+      font-size: 3rem;
+      padding-top: 30px;
+    }
+    .article-footer > .slogan > .second-row > h2 {
+      font-size: 3rem;
+    }
+    .article-footer > .kontakt > .Adresy > h4 {
+      font-size: 1rem;
+    }
+    .article-footer > .kontakt > .Znajdz > h4{
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 1360px) and (max-width: 1917px) {
+    .article-footer > .slogan > .first-row > h1 {
+      font-size: 4rem;
+    }
+    .article-footer > .slogan > .first-row > h2 {
+      font-size: 2rem;
+      padding-top: 30px;
+    }
+    .article-footer > .slogan > .second-row > h2 {
+      font-size: 2rem;
+    }
+    .article-footer > .kontakt > .Adresy > h4 {
+      font-size: 0.75rem;
+    }
+    .article-footer > .kontakt > .Znajdz > h4{
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (min-width: 790px) and (max-width: 1350px) {
+    .article-footer > .slogan > .first-row > h1 {
+      font-size: 2.5rem;
+    }
+    .article-footer > .slogan > .first-row > h2 {
+      font-size: 1.3rem;
+      padding-top: 18px;
+    }
+    .article-footer > .slogan > .second-row > h2 {
+      font-size: 1.3rem;
+    }
+    .article-footer > .kontakt > .Adresy > h4 {
+      font-size: 0.7rem;
+    }
+    .article-footer > .kontakt > .Znajdz > h4{
+      font-size: 0.7rem;
     }
   }
 }

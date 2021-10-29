@@ -26,8 +26,8 @@ export default class MainFooter extends React.Component {
           <div className={"Znajdz"}>
             <h4>Znajdź nas:</h4>
             <ul>
-              <li><a href={"https://www.instagram.com/mannacoffeespace/"}><img src={logo_insta}/></a></li>
-              <li><a href={"https://www.facebook.com/MannaCoffeeSpace"}><img src={logo_fb}/></a> </li>
+                <li><a href={"https://www.facebook.com/MannaCoffeeSpace"}><img src={logo_fb}/></a> </li>
+                <li className={'insta'}><a href={"https://www.instagram.com/mannacoffeespace/"}><img src={logo_insta}/></a></li>
             </ul>
 
           </div>

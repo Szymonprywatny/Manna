@@ -19,7 +19,7 @@
 .Gallery {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 4px;
   padding-left: 5vw;
   padding-top: 2vh;
   padding-right: 5vw;
@@ -94,8 +94,12 @@
   box-sizing: border-box;
   padding: 20px 0 20px;
   margin: 0 auto;
-
-
 }
 
-
+//---SAFARI ONLY------
+@supports (-webkit-hyphens:none) {
+  .Gallery > .pics {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
