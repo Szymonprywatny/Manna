@@ -81,54 +81,22 @@
     grid-row: 4 / 6;
     grid-column: 5 / -1;
     background-color: #11645A;
+    margin-left: 26px;
+    outline: 1px solid white;
+    outline-offset: -6px;
 
     & > img {
 
       width: auto;
       height: 100%;
       //outline: 6px solid #11645A;
-      outline-offset: -6, 0, -6, 0px;
+      //outline-offset: -4px;
       //border-radius: 0.5vw;
     }
     & > .not-first-img{
       //padding-left: 5px;
-      margin: 0px;
     } 
   }
-  //
-  //@media screen and (max-width: 1023px) {
-  //  .Torty-txt {
-  //    grid-row: 3 / 4;
-  //    grid-column: 1 / -1;
-  //  }
-  //
-  //  .Torty-img {
-  //    //display: flex;
-  //    grid-row: 4 / 5;
-  //    grid-column: 1 / -1;
-  //    background-color: #11645A;
-  //    text-align: center;
-  //    align-items: center;
-  //
-  //    & > img {
-  //      width: auto;
-  //      height: 100%;
-  //      outline: 8px solid #11645A;
-  //      outline-offset: -8px;
-  //    }
-  //  }
-  //  .Event-footer {
-  //    grid-row: none;
-  //    grid-column: none;
-  //    padding-bottom: 0;
-  //
-  //  }
-  //  .hide {
-  //    position: fixed;
-  //    visibility: hidden;
-  //
-  //  }
-  //}
 
   & > .Event-footer {
     grid-row: 6 / -1;
@@ -139,6 +107,7 @@
     padding-right: 8vw;
     padding-bottom: 0;
     height: 80px;
+    margin-top: 20px;
 
     & > h4 {
       padding-top: 8px;
@@ -155,7 +124,7 @@
       justify-content: right;
       flex-direction: row;
       gap: 10px;
-      padding-right: 4px;
+      padding-right: 2px;
 
       & > li {
         list-style: none;
