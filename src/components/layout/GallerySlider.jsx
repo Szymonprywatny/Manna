@@ -6,6 +6,9 @@ import Img2 from "../..//icons/gallery1.JPG";
 import Img3 from "../..//icons/gallery3.JPG";
 import Img4 from "../..//icons/gallery4.JPG";
 import {useTransition, animated} from "react-spring";
+import Navbar from "./Navbar";
+import {Link} from "react-router-dom";
+import manna_logo from "../../icons/manna_logo.svg";
 
 const Gallery = () => {
     let data = [
@@ -34,19 +37,22 @@ const Gallery = () => {
         setTempImgSrc(imgSrc);
         setModel(true);
     }
-
+    const width = window.screen.width;
     const [isVisible, setIsVisible] = useState(false);
     const transition = useTransition(isVisible, {
-        from: {opacity: 1, transform: "translate(200%, 0)"},
-        enter: {opacity: 1, transform: "translate(0%, 0)"},
-        leave: {transform: "translate(0%, -50%)"}
+        from: {opacity: 1, x: width},
+        enter: {opacity: 1,  x: 0},
+        leave: {transform:  1, x: width}
     })
 
     const closeModal = () => setModel(false)
 
     return <>{transition((style, item) => {
         return <animated.div style={style}>
-
+            {/*<Navbar/>*/}
+            <div className={'mobile-navbar'}>
+                <Link to={"/"}><img className={'logo'} src={manna_logo} alt={'logo'}/></Link>
+            </div>
             <div className={'GalleryHeader'}>
                 <h1>Galeria</h1>
             </div>

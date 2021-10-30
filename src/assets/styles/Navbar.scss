@@ -1,18 +1,19 @@
 
 .navbar {
   display: flex;
-  z-index: 998;
+  z-index: 999;
   height: 21vh;
   width: 100vw;
   border-style: solid;
-  border-width: 0px 0px 3px 0px;
-  border-color: #707070;
-  background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(243,243,243,1) 100%);
+  border-width: 0px 0px 2px 0px;
+  border-color: #969696;
+  //background-color: #f6f6f6;
+  background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 100%);
 
   & > ul {
     display: flex;
     justify-content: center;
-    gap: 4vw;
+    gap: 3.5vw;
     align-items: end;
     list-style: none;
     width: 100%;
@@ -21,16 +22,27 @@
     font-style: normal;
     font-size: clamp(1rem, 1vw, 1.618rem);
 
-    & > .text-menu{
+    & > .text-menu {
+      text-align: center;
+      //width: 120px;
       padding-bottom: 18px;
     }
   }
 }
-.menu-bar{
+
+.menu-bar {
   display: none;
 }
+
+.item2 {
+  height: 100px;
+  width: 100px;
+  background-color: #191919;
+}
+
 .logo {
   height: 19vh;
+  //padding-bottom: 20px;
   //width: auto;
   //max-width: 8vw;
   //height: 19vh;
@@ -38,7 +50,7 @@
 }
 
 .nav-item {
-  color: #787878;
+  color: #969696;
   font-family: magallanes, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -47,74 +59,132 @@
   transition: color 0.3s;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .nav-item-active {
-  color: #191919;
-  font-weight: 500;
+  //position: absolute;
+  //padding-left: 10px;
+  //padding-right: 10px;
+
+  color: #707070;
+  //font-weight: bold;
+  //font-weight: 600;
+
   //text-shadow: 1px #333333;
 }
 
 .nav-item:hover {
 
   text-decoration: none;
-  color: #191919;
+  color: #707070;
   transition: color 0.3s;
-
+}
+.mobile-navbar{
+  height: 0vw;
 }
 
 @media screen and (max-width: 768px) {
-  .text-menu{
+  .text-menu {
     display: none;
   }
-  .mobile-menu{
+  .mobile-menu {
     position: absolute;
-    top: 21vh;
+    display: flex;
+    z-index: 999;
+    //top: 10vh;
     width: 100vw;
-    height: 35vh;
-    background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(243,243,243,1) 100%);
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 100%);
     //border-bottom: 2px solid
     & > ul {
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
-      text-align: center;
-      align-items: stretch;
-    & > li {
-      height: 100%;
-      //padding-top: 10px;
-      align-items: center;
-      padding-top: 8%;
-      //height: 8vh;
-    }
+
+
+      & > li {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        height: 100%;
+      }
     }
   }
+  .mobile-navbar{
+    height: 21vh;
+    width: 100vw;
+    background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 100%);
+
+  }
   .navbar {
+    //display: none;
+
+    //border-width: 1px;
+    height: 0vh;
+    //border-style: solid;
+    //border-width: 0px 0px 2px 0px;
+    //border-color: #f6f6f6;
     border: none;
   }
   .logo {
     //padding-top: 20px;
-    height: 124px;
+    height: 16vh;
     //margin-top: 2vh;
-    //padding-bottom: ;
+    padding-bottom: 4px;
+
   }
-  .menu-bar{
+  .menu-bar {
     display: block;
     position: absolute;
-    left: 8vw;
-    top: 5vh;
-    height: 18px;
-    width: auto;
+    left: 10vw;
+    top: 3vh;
+    height: 14px;
+    //width: 22px;
+  }
+  .nav-item {
+    font-weight: bold;
+  }
+  .nav-item-active {
+    //position: absolute;
+    //padding-left: 10px;
+    //padding-right: 10px;
+    color: #707070;
+    font-weight: bold;
+    //font-weight: 600;
+
+    //text-shadow: 1px #333333;
+  }
+  .x-menu {
+    display: flex;
+    position: absolute;
+    right: 10vw;
+    top: 3vh;
+    height: 14px;
+    width: 14px;
+    color: red;
+  }
+  .normalmenu{
+    display: none;
   }
 }
+
 //---SAFARI ONLY------
 @supports (-webkit-hyphens:none) {
   .navbar {
     & > ul {
       align-items: flex-end;
-     & > .text-menu{
+
+      & > .text-menu {
         padding-right: 2vw;
         padding-left: 2vw;
       }
-      & > .navbar-logo{
+
+      & > .navbar-logo {
         padding-right: 2vw;
         padding-left: 2vw;
       }

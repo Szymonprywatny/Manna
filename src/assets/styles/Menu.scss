@@ -31,20 +31,22 @@
     background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 100%);
 
     & > .WhiteHeader {
-      padding-left: 8vw;
+      padding-left: 5vw;
       padding-top: 2.5rem;
       height: 60px;
       font-size: clamp(0.75rem, 1vw, 1rem);
       font-family: magallanes, sans-serif;
-      font-weight: 700;
       font-style: normal;
       color: #484848;
+      & > h1 {
+        font-weight: 500;
+      }
 
     }
 
     & > .WhiteMenu {
       //padding-top: -50px;
-      padding-left: 10Vw;
+      padding-left: 8Vw;
       font-family: magallanes, sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -95,7 +97,7 @@
     }
 
     & > .GreenMenu {
-      padding-right: 10vw;
+      padding-right: 8vw;
       font-family: magallanes, sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -129,7 +131,7 @@
     & > .GreenFooter {
       & > footer {
         padding-top: 2px;
-        padding-right: 8vw;
+        padding-right: 5vw;
         //height: 85px;
         //padding-top: 80px;
 

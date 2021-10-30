@@ -3,22 +3,31 @@ import "../../assets/styles/MainArticle.scss";
 import Cup from "./Cup";
 import MainFooter from "./Mainfooter";
 import {useTransition, animated} from "react-spring";
-
+import {Link} from "react-router-dom";
+import manna_logo from "../../icons/manna_logo.svg";
+import Navbar from "./Navbar";
 const MainArticle = () => {
+  const height = window.screen.height;
   const [isVisible, setIsVisible] = useState(false);
   const transition = useTransition(isVisible, {
-    from: {opacity: 1, transform: "translate(0%, -200%)"},
-    enter: {opacity: 1, transform: "translate(0%, 0)"},
-    leave: {transform: "translate(0%, -50%)"}
+    from: {opacity: 1, y: -height},
+    enter: {opacity: 1,  y: 0},
+    leave: {transform:  1, y: -height}
   })
 
   return <>{transition((style, item) => {
     return <animated.div className={'test2'} style={style}>
+
+    {/*<Navbar/>*/}
+      <div className={'mobile-navbar'}>
+        <Link to={"/"}><img className={'logo'} src={manna_logo} alt={'logo'}/></Link>
+      </div>
+
       <div className={"main-article"}>
         <section>
           <h2>Kawiarnia inna niż <br/>wszystkie.</h2>
-          <h3>Na słodko lub słono, a przede <br/>wszystkim kawa. Położona na <br/>wysokości Teatru Polskiego,
-            pełna <br/>ciepła i artystycznego vibe'u</h3>
+          <h3>Na słodko lub słono, a przede <br/>wszystkim kawa. Położona na wysokości<br/> Teatru Polskiego,
+            pełna ciepła i<br/> artystycznego vibe'u</h3>
         </section>
       </div>
       <Cup/>

@@ -8,19 +8,25 @@ import tort1 from "../..//icons/tort1.jpg"
 import tort2 from "../..//icons/tort2.jpg";
 import tort3 from "../..//icons/tort3.jpg"
 import {useTransition, animated} from "react-spring";
+import Navbar from "./Navbar";
+import {Link} from "react-router-dom";
+import manna_logo from "../../icons/manna_logo.svg";
 
 const Event = () => {
-
+    const height = window.screen.height;
     const [isVisible, setIsVisible] = useState(false);
     const transition = useTransition(isVisible, {
-        from: {opacity: 1, transform: "translate(0%, 200%)"},
-        enter: {opacity: 1, transform: "translate(0%, 0)"},
-        leave: {transform: "translate(0%, -50%)"}
+        from: {opacity: 1, y: height},
+        enter: {opacity: 1,  y: 0},
+        leave: {transform:  1, y: height}
     })
 
     return <>{transition((style, item) => {
         return <animated.div style={style}>
-
+            {/*<Navbar/>*/}
+            <div className={'mobile-navbar'}>
+                <Link to={"/"}><img className={'logo'} src={manna_logo} alt={'logo'}/></Link>
+            </div>
             <div className="main-event">
 
                 <div className={"Event-header"}>

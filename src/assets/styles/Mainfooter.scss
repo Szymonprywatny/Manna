@@ -3,9 +3,9 @@
 .article-footer {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   width: 100vw;
-  height: calc(38vh - 5px);
+  height: 38vh;
   background-color: #11645A;
 
   & > .slogan {
@@ -13,7 +13,7 @@
     //flex-wrap: wrap;
     flex-direction: column;
     max-width: 500px;
-    //justify-content: flex-end;
+    justify-content: flex-end;
     padding-left: 10vw;
     padding-bottom: 5vh;
 
@@ -56,6 +56,7 @@
   & > .kontakt {
     padding-right: 10vw;
     text-align: right;
+    //line-height: 1.2px;
     //padding-bottom: 1.6vh;
 
     & > .Adresy > h4 {
@@ -64,6 +65,7 @@
       font-style: normal;
       //font-size: clamp(1rem, 1.75vw, 1.5rem);
       font-size: clamp(1rem, 2vw, 1rem);
+      line-height: 20px;
     }
 
     & > .Znajdz {
@@ -96,6 +98,56 @@
     }
   }
 }
+@media (max-width: 789px) {
+  .article-footer{
+  height: 44vh;
+    & > .slogan {
+      max-width: 50%;
+
+      //margin-left: 0;
+      margin-bottom: 7vh;
+      & > .first-row{
+        flex-direction: column;
+        //align-items: left;
+        align-items: normal;
+        & > h1 {
+          font-size: 3.6rem;
+          //letter-spacing: --px;
+          //font-weight: 100;
+          //font-weight: 800;
+          //font-style: normal;
+        }
+        & > h2 {
+          font-size: 1.2rem;
+        }
+      }
+      & > .second-row{
+        & > h2 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    & > .kontakt{
+      & > .Adresy{
+        & > h4 {
+          font-size: 0.6rem;
+        }
+      }
+      & > .Znajdz{
+        & > h4 {
+          font-size: 0.6em;
+        }
+        & > ul > li > a > img {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+
+}
+
+
 
 //---SAFARI ONLY------
 @supports (-webkit-hyphens:none) {

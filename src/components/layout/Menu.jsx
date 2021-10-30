@@ -4,17 +4,25 @@ import maszynko from "../..//icons/maszynko.jpg";
 import logo_fb from "../..//icons/logo_fb.svg";
 import logo_insta from "../..//icons/logo_insta.svg";
 import {useTransition, animated} from "react-spring";
+import Navbar from "./Navbar";
+import {Link} from "react-router-dom";
+import manna_logo from "../../icons/manna_logo.svg";
 
 const Menu = () => {
+    const width = window.screen.width;
     const [isVisible, setIsVisible] = useState(false);
     const transition = useTransition(isVisible, {
-        from: {opacity: 1, transform: "translate(-200%, 0)"},
-        enter: {opacity: 1, transform: "translate(0%, 0)"},
-        leave: {transform: "translate(0%, -50%)"}
+        from: {opacity: 1, x: -width},
+        enter: {opacity: 1,  x: 0},
+        leave: {transform:  1, x: -width}
     })
 
     return <>{transition((style, item) => {
         return <animated.div style={style}>
+            <div className={'mobile-navbar'}>
+                <Link to={"/"}><img className={'logo'} src={manna_logo} alt={'logo'}/></Link>
+            </div>
+            {/*<Navbar/>*/}
             <div className="Menu">
                 <div className={'Maszynko'}>
                     <img src={maszynko}/>
