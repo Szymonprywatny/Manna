@@ -18,7 +18,7 @@
   flex-direction: row;
   vertical-align: center;
   align-items: center;
-  height: calc(79vh - 3px);
+  height:79vh;
   width: 100vw;
 
   & > .MenuWhite {
@@ -28,18 +28,19 @@
     width: 50%;
     height: 100%;
     background: rgb(246, 246, 246);
-    background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 200%);
 
     & > .WhiteHeader {
-      padding-left: 5vw;
+      padding-left: 8vw;
       padding-top: 2.5rem;
-      height: 60px;
-      font-size: clamp(0.75rem, 1vw, 1rem);
-      font-family: magallanes, sans-serif;
-      font-style: normal;
-      color: #484848;
+      //height: 60px;
+
       & > h1 {
         font-weight: 500;
+        font-size: clamp(1.2rem, 2vw, 1.75rem);
+        font-family: magallanes, sans-serif;
+        font-style: normal;
+        color: #1D1D1D;
       }
 
     }
@@ -92,8 +93,8 @@
     //justify-content: center;
     & > .GreenHeader {
       padding-right: 8vw;
-      padding-top: 3vh;
-      height: 100px;
+      //padding-top: 2.5rem;
+      min-height: 70px;
     }
 
     & > .GreenMenu {
@@ -114,6 +115,7 @@
             font-weight: 500;
             font-style: normal;
             padding-bottom: 4px;
+            text-shadow: 4px -1px 8px rgba(3, 3, 3, 0.33);
           }
 
           & > h3 {
@@ -121,7 +123,7 @@
             font-family: magallanes, sans-serif;
             font-weight: 400;
             font-style: normal;
-            text-shadow: 4px -2px 8px rgba(3, 3, 3, 0.33);
+            text-shadow: 4px -1px 8px rgba(3, 3, 3, 0.33);
           }
         }
       }
@@ -209,12 +211,39 @@
   }
 }
 //---
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .Maszynko {
     & > img {
       display: none;
     }
   }
+  .Menu > .MenuGreen > .GreenMenu > ul{
+    padding-bottom: 8px;
+  }
+  .Menu > .MenuWhite > .WhiteMenu > ul > li > h2 {
+    font-size: 1rem;
+  }
+  .Menu > .MenuWhite > .WhiteMenu > ul > li > h3 {
+    font-size: 0.8rem;
+  }
+  .Menu > .MenuGreen > .GreenMenu > ul > li > h2 {
+    font-size: 1rem;
+  }
+  .Menu > .MenuGreen > .GreenMenu > ul > li > h3 {
+    font-size: 0.8rem;
+  }
+  .Menu > .MenuGreen > .GreenFooter > footer {
+    & > h4 {
+      font-size: 0.8rem;
+    }
+    & > ul > li > a > img {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+
+
 }
 
 

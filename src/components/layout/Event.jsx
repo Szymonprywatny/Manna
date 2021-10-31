@@ -16,16 +16,17 @@ const Event = () => {
     const height = window.screen.height;
     const [isVisible, setIsVisible] = useState(false);
     const transition = useTransition(isVisible, {
-        from: {opacity: 1, y: height},
+        from: {opacity: 1, y: -height},
         enter: {opacity: 1,  y: 0},
-        leave: {transform:  1, y: height}
+        leave: {transform:  1, y: -height}
     })
 
     return <>{transition((style, item) => {
-        return <animated.div style={style}>
+        return <animated.div style={style} className={'test2'}>
             {/*<Navbar/>*/}
             <div className={'mobile-navbar'}>
                 <Link to={"/"}><img className={'logo'} src={manna_logo} alt={'logo'}/></Link>
+
             </div>
             <div className="main-event">
 

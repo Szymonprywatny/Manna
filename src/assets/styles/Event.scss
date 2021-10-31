@@ -4,7 +4,7 @@
   display: grid;
   flex-direction: column;
   width: 100vw;
-  height: calc(79vh - 3px);
+  height: 79vh;
   background: rgb(246,246,246);
   background: linear-gradient(45deg, rgba(246,246,246,1) 0%, rgba(243,243,243,1) 100%);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -17,14 +17,16 @@
     padding-top: 2.5rem;
 
     & > h1 {
-      font-size: clamp(1rem, 2vw, 1.75rem);
+      font-size: clamp(1.2rem, 2vw, 1.75rem);
       font-family: magallanes, sans-serif;
       font-weight: 500;
       font-style: normal;
+      color: #1D1D1D;
     }
   }
 
   & > .Event-catering {
+    width: 80vw;
     grid-row: 2 / 4;
     grid-column: 1 / -1;
     //padding-top: 1vw;
@@ -53,7 +55,7 @@
 
   & > .Torty-txt {
     grid-row: 4 / 6;
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     padding-left: 10vw;
     //padding-top: 2vw;
 

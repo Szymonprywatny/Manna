@@ -13,6 +13,7 @@ const MainArticle = () => {
     from: {opacity: 1, y: -height},
     enter: {opacity: 1,  y: 0},
     leave: {transform:  1, y: -height}
+    // delay: 200
   })
 
   return <>{transition((style, item) => {

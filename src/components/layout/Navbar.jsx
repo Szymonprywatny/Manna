@@ -8,26 +8,24 @@ import {Link, NavLink, Route, Switch} from 'react-router-dom';
 
 
 const Navbar = (props) => {
-    const width = window.screen.width;
+    const height = window.screen.height;
     const [isVisible, setIsVisible] = useState(false);
     const transition = useTransition(isVisible, {
-        // from: {opacity: 0, transform: "translate(-100%, 0%)"},
-        // enter: {opacity: 1, transform: "translate(0%, 0)"},
-        // leave: {opacity: 0, transform: "translate(-100%, 0%)"}
-        from: {opacity: 1, x: -width},
-        enter: {opacity: 1, x: 0},
-        leave: {opacity: 1, x: -width}
+        from: {opacity: 1, y: -height},
+        enter: {opacity: 1, y: 0},
+        leave: {opacity: 1, y: height}
     })
 
     return <div className={"navbar"}>
+
 
         <img className={'menu-bar'} src={menu} alt={'menu'} onClick={() => {
             setIsVisible(v => !v);
         }}/>
 
+
         {transition((style, item) =>
             item ? <animated.div style={style} className="mobile-menu">
-
                 <img className={'x-menu'} src={xmenu} alt={'x-menu'} onClick={() => {
                     setIsVisible(v => !v);
                 }}/>
@@ -75,11 +73,7 @@ const Navbar = (props) => {
                     </NavLink></li>
                 </ul>
             </animated.div> : '')}
-
-
-        {/*<div className={'normal-menu'}>*/}
-        {/*<div className={'normalmenu'}>*/}
-        <ul>
+                <ul>
             <li className={"text-menu"}>
                 <NavLink
                     exact to={""}

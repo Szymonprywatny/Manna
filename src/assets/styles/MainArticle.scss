@@ -1,7 +1,9 @@
-//
+
 .test2 {
   position: absolute;
   z-index: -1;
+  background: linear-gradient(45deg, rgba(246, 246, 246, 1) 0%, rgba(243, 243, 243, 1) 100%);
+  background-color: red;
 }
 
 .main-article {

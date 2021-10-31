@@ -9,16 +9,16 @@ import {Link} from "react-router-dom";
 import manna_logo from "../../icons/manna_logo.svg";
 
 const Menu = () => {
-    const width = window.screen.width;
+    const height = window.screen.height;
     const [isVisible, setIsVisible] = useState(false);
     const transition = useTransition(isVisible, {
-        from: {opacity: 1, x: -width},
-        enter: {opacity: 1,  x: 0},
-        leave: {transform:  1, x: -width}
+        from: {opacity: 1, y: -height},
+        enter: {opacity: 1,  y: 0},
+        leave: {transform:  1, y: -height}
     })
 
     return <>{transition((style, item) => {
-        return <animated.div style={style}>
+        return <animated.div style={style} className={'test2'}>
             <div className={'mobile-navbar'}>
                 <Link to={"/"}><img className={'logo'} src={manna_logo} alt={'logo'}/></Link>
             </div>
