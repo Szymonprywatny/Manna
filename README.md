@@ -1,1 +1,1 @@
-First responsive website. Ui not design by me.
+First responsive website. Ui/ux NOT designed by me.
